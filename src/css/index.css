@@ -1,0 +1,79 @@
+body{
+    background-color: #eaeaea;
+}
+
+/*--------- Header --------- */
+.header-section{
+    background-image: url(../assets/img/pexels-photo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    color: white;
+    transition: 0.5s;
+}
+.header-section:hover{
+    opacity: 0.9;
+}
+.h1-welcome{
+    opacity: 1;
+    font-weight: bold;
+    font-size: 34px;
+    text-shadow: 5px 5px 2px #000000;
+}
+.p-lorem-ipsum{
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    text-shadow: 3px 3px 2px #000000;
+    line-height: 28px;
+}
+.a-readmore{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid rgb(105, 105, 105);
+    transition: 0.5s;
+}
+.a-readmore:hover{
+    background-color: white;
+    color: #000000;
+}
+
+/* ======== Web Application Development =========== */
+.area-web-application{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 52%;
+    margin: 0 auto;
+    align-items: center;
+}
+.area-web-application-lorem-ipsum{
+    color:#333;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 28px;
+}
+.area-web-application-lorem-ipsum p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+}
+.h1-web-application{
+    font-weight: bold;
+    font-size: 26px;
+    color:#333}
+
+    

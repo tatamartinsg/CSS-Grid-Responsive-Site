@@ -1,0 +1,169 @@
+#main{
+    display: grid;
+    grid-template-areas: 
+    "area-web-application area-web-application"
+    "area-web-mobile-marketing area-web-mobile-marketing"
+    "area-wehandle area-wehandle"
+    "area-contact-us area-web-about-our-company";
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px,auto);
+}
+
+.area-web-application {
+    grid-area: area-web-application;
+    grid-row: 1/2;
+}
+.area-web-mobile-marketing{
+    grid-area: area-web-mobile-marketing;
+    grid-row: 2/5;
+}
+.area-wehandle{
+    width: 50%;
+    margin: 0 auto;
+    grid-area: area-wehandle;
+    grid-row: 5/6;
+    text-align: center;
+    padding: 35px;
+}
+.area-wehandle h1, p{
+    padding-bottom: 58px;
+}
+.area-wehandle h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.area-wehandle p{
+    font-size: 17px;
+    line-height: 20px;
+}
+.area-contact-us{
+    padding: 60px;
+    text-align: center;
+    background-color: #2690d4;
+    grid-area: area-contact-us;
+    grid-row: 6/7;
+}
+.area-contact-us-h1-p, .area-web-about-h1-p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 90%;
+    line-height: 25px;
+    font-size: 17px;
+    margin: 0 auto;
+}
+.area-contact-us-h1-p h1, .area-web-about-h1-p h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+.area-web-about-our-company{
+    grid-area: area-web-about-our-company;
+    grid-row: 6/7;
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+}
+
+/*========= Cards: Web Development, Mobile e Tech Marketing ========== */
+.area-web-mobile-marketing{
+    display: grid;
+    grid-template-areas: 
+    "web-development mobile marketing";
+    background-color: #333;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-gap: 15px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.web-development{
+    grid-area: web-development;
+    grid-column: 2/3;
+}
+.mobile{
+    grid-area: mobile;
+    grid-column: 3/4;
+}
+.marketing{
+    grid-area: marketing;
+    grid-column: 4/5;
+}
+.img-cards{
+    width: 100%;
+}
+.cards{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+.cards p {
+    text-align: center;
+    color: #333;
+    font-size: 17px;
+    line-height: 24px;
+    width: 80%;
+}
+.cards h1{
+    padding: 25px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 45px;
+    font-size: 18px;
+}
+.footer-a{
+    color: #2690d4;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px){
+    .area-web-mobile-marketing{
+        grid-template-columns: 0;
+    }
+
+}
+
+@media (max-width: 780px){
+    #main{
+        grid-template-areas: 
+        "area-web-application area-web-application"
+        "area-web-mobile-marketing area-web-mobile-marketing"
+        "area-wehandle area-wehandle"
+        "area-contact-us area-contact-us"
+        "area-web-about-our-company area-web-about-our-company";
+    }
+    .area-contact-us{
+        grid-row: 6/7;
+    }
+    .area-web-about-our-company{
+        grid-row: 7/8;
+    }
+    .area-web-application{
+        text-align: center;
+    }
+    .area-web-application-lorem-ipsum{
+        flex-direction: column;
+        gap: 0;
+    }
+    .area-web-mobile-marketing{
+        display: flex;
+        flex-direction: column;
+    }
+}
